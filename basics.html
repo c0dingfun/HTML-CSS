@@ -1,0 +1,31 @@
+<!DOCTYPE html> <!--Doc Type is HTML5 -->
+<html>  <!--open tag for well form HTML page-->
+<head> <!--Not displayed-->
+    <title> My First Web Page </title> <!--Title of the page-->
+
+    <!--meta tag-->
+    <meta name="description" content="Page Description Here" /> <!--for search engine-->
+    <meta http-equiv="Content-Type" content="text/html"; charset="utf-8"/> <!--specify charset to use-->
+    <meta name="viewport" content="width=device-width, initial-scale=1"/> <!--viewport tells the browser how to display it-->
+
+    <style type="text/css"> <!--style for Body tag all red-->
+        Body {
+            color: red;
+        }
+    </style>
+
+    <!--html comment -->
+    <script>    /* javascript comment*/
+        function myFunction() {
+            var x = document.getElementById("fname");
+            x.value = x.value.toUpperCase();
+        }
+    </script>
+</head>
+
+<body> <!--Portion to be displayed-->
+<p>This is a Sample HTML Document.</p>  <!--paragraph tag-->
+This Javascript function will capitalize my name:
+<p>Enter your name: <input type="text" id="fname" onchange="myFunction()"></p>
+</body>
+</html>
