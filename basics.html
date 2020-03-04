@@ -129,7 +129,8 @@ This Javascript function will capitalize my name:
 <p>
     <!-- <table width="100%" border="1" bordercolor="blue" cellspacing="2" cellpadding="2"> -->
     <!-- <table width="50%" border="1" bordercolor="blue" cellspacing="2" cellpadding="2"> -->
-    <table width="500" border="1" bordercolor="blue" cellspacing="2" cellpadding="2">
+    <!-- table can have background -->
+    <table width="500" background="tablebg.jpg" border="1" bordercolor="blue" cellspacing="2" cellpadding="2">
         <tr>
             <td>sport</td>
             <td>response</td>
@@ -137,7 +138,8 @@ This Javascript function will capitalize my name:
 
         <tr>
             <td>baseball</td>
-            <td>25</td>
+            <!-- alignment can ba achieved -->
+            <td align="right">25</td>
         </tr>
         <tr>
             <td>basketball</td>
@@ -149,8 +151,131 @@ This Javascript function will capitalize my name:
             <td>26</td>
         </tr>
     </table>
-
-
 </p>
+
+<p>
+    <!-- Nested Table -->
+    <table width="500" border="1" bordercolor="blue" cellspacing="2" cellpadding="2">
+        <tr>
+            <!-- colspan and nowrap -->
+            <td colspan="2" nowrap>sport</td>
+        </tr>
+    </table>
+</p>
+
+<p>
+    <!-- HTML Forms:
+    Used to gather input from user
+    For Data can be input into a Database or sent to an email address.
+    Input forms are created in HTML
+    Data is submitted to a script for processing -->
+
+    <!-- Diff between GET and POST method of http
+    GET requests data from a specific resource
+    GET uses name/value pairs which are sent via the URL string
+    fe: send.php?fname=john&lname=smith
+    GET can be cached
+    GET remain in browser history
+    Should only be used to retrieve data
+    Have length limitation
+    Should not be used for sensitive data
+    Can be bookmarked
+
+    POST submits data to be processed to a specific resource
+    POST sends name/value pairs in the HTTP message body
+    fe: POST send.php HTTP/1.1
+    HOST: you.com
+    fname=john&lname=smith
+    No restrictions on data length
+    can not be bookmarked
+    do not remain in browser history
+    requests are never cached -->
+     
+    <form name="employment" action="send.php" method="post">
+    <table width="600" border="1" cellspacing="2" cellpadding="2">
+        <tr>
+          <td>Employment Application</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>First Name</td>
+          <td><input type="text" name="fname" maxlength="50"/></td>
+          
+        </tr>
+        <tr>
+          <td>Last Name</td>
+          <td><input type="text" name="lname" maxlength="50"/></td>
+        </tr>
+        <tr>
+          <td>Position</td>
+          <td>
+              <select name="position">
+                  <option value="AC">Accountant</option>
+                  <option value="AE">Receptionist</option>
+                  <option value="AD">Administrator</option>
+                  <option value="SU">Supervisor</option>
+              </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Experience Level</td>
+          <td>
+              <select name="experience">
+                  <option value="EL">Entry Level</option>
+                  <option value="SE">Some Experience</option>
+                  <option value="VE">Very Experienced</option>
+              </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Job Type</td>
+          <td>
+              <input type="checkbox" name="ft"/>Full-Time
+              <input type="checkbox" name="pt"/>Part-Time
+              <input type="checkbox" name="ct"/>Contract
+          </td>
+        </tr>
+        <tr>
+          <td>Employment Status</td>
+          <td>
+              <input type="radio" name="status" value="employed"/>Employed
+              <input type="radio" name="status" value="unemployed"/>UnEmployed
+              <input type="radio" name="status" value="student"/>Student
+          </td>
+        </tr>
+        <tr>
+          <td>Additional Comments</td>
+          <td>
+              <textarea name="comments" cols="45" rows="5"></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
+              <input type="submit" name="submit" value="submit"/>
+              <input type="reset" name="reset" value="reset"/>
+          </td>
+        </tr>
+      </table>
+    </form>
+</p>
+
+<!-- How to do iframe -->
+<p>
+    <p>
+
+    <iframe src="http://www.bing.com" width="100%" height="400">
+        <p>Your Browser does not support iframe</p>
+    </iframe>
+    </p>
+
+    <p>
+    <iframe src="http://www.google.com" width="100%" height="400">
+        <p>Your Browser does not support iframe</p>
+    </iframe>
+
+    </p>
+</p>
+
 </body>
 </html>
