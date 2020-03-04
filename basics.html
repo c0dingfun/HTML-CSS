@@ -78,11 +78,79 @@ This Javascript function will capitalize my name:
     <img src="http://veridicusinc.com/wp-content/uploads/2016/02/Houston_night.jpg" width="389" height="250">
 </p>
 
-<!-- Playing video -->
-<Video width="600" controls>
-    <source="ya.mp4" type="video/mp4">
+<!-- Playing video (does not work) -->
+<!-- <Video width="600" controls> -->
+<!-- <Video width="600" autoplay>
+    <source=".\ya.mp4" type="video/mp4">
     Your browser does not support the video tag.
-</Video>
+</Video> -->
 
+<p>
+<!-- this way works the <source> tag is not working!!!! -->
+<video src="ya.mp4" controls>
+<!-- <video src="ya.mp4" > -->
+    Your browser won't work with video tag
+</video>
+</p>
+
+<p>
+<!-- Use target attribute "_blank" to open the link in new tab -->
+<a href="http://www.miami.com" target="_blank"><img src="FL.jpg"></a> 
+<a href="http://www.lasvegas.com"><img src="LV.jpg"></a> 
+<a href="http://www.newyork.com"><img src="NY.jpg"></a> 
+<a href="http://www.Houston.com"><img src="http://veridicusinc.com/wp-content/uploads/2016/02/Houston_night.jpg"></a> 
+</p>
+
+<!-- Anchor Tag -->
+<p><h1>Table of Contents:</h1></p>
+<ul>
+  <li><a href="#article1">Article 1</a><br>
+    </li>
+  <li><a href="#article2">Article2</a><br>
+    </li>
+  <li>Article 3<br>
+    </li>
+  <li>Article 4</li>
+  <li>Article 5<br>
+  </li>
+</ul>
+<p><h1><a id="article1"></a>Article 1</h1></p>
+<p>this is article 1</p>
+<p><h1><a id="article2"></a>Article 2</h1></p>
+<p>this is article 2</p>
+<p><h1><a id="article3"></a>Article 3</h1></p>
+<p>this is article 3</p>
+<p><h1><a id="article4"></a>Article 4</h1></p>
+<p>this is article 4</p>
+<p><h1><a id="article5"></a>Article 5</h1></p>
+<p>this is article 5</p>
+
+<!-- Table -->
+<p>
+    <!-- <table width="100%" border="1" bordercolor="blue" cellspacing="2" cellpadding="2"> -->
+    <!-- <table width="50%" border="1" bordercolor="blue" cellspacing="2" cellpadding="2"> -->
+    <table width="500" border="1" bordercolor="blue" cellspacing="2" cellpadding="2">
+        <tr>
+            <td>sport</td>
+            <td>response</td>
+        </tr>
+
+        <tr>
+            <td>baseball</td>
+            <td>25</td>
+        </tr>
+        <tr>
+            <td>basketball</td>
+            <td>28</td>
+        </tr>
+
+        <tr>
+            <td>Hockey</td>
+            <td>26</td>
+        </tr>
+    </table>
+
+
+</p>
 </body>
 </html>
